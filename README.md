@@ -1,10 +1,10 @@
-# Ionic Implementation
+# Flutter Implementation
 
 ## Overview
 
 Here you can find instructions on how to integrate and use FriendlyScore Connect for Flutter.
 
-To get started quickly with FriendlyScore Connect for Ionic, clone the [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Ionic-Native-Example) and run the example. You need to [sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
+To get started quickly with FriendlyScore Connect for Flutter, clone the [GitHub repository](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example) and run the example. You need to [sign-up](https://friendlyscore.com/getting-started) for the free API keys through our Developer Console.
 
 ## Requirements
 - [FriendlyScore API keys](https://friendlyscore.com/company/keys)
@@ -32,7 +32,7 @@ Please follow the instructions below to install FriendlyScore Connect Android Na
 
 #### Add the following values to your project-level build.gradle file
 
-In your project-level Gradle file (you can find an example in the demo [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Ionic-Native-Example/blob/master/android/build.gradle)), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`.
+In your project-level Gradle file (you can find an example in the demo [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/android/build.gradle)), add rules to include the Android Gradle plugin. The version should be equal to or greater than `3.2.1`.
 
 ```groovy
 buildscript {
@@ -44,7 +44,7 @@ buildscript {
 
 #### Add the following values to your project-level build.gradle file
 
-In your project-level Gradle file (you can find an example in the demo, [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Ionic-Native-Example/blob/master/android/build.gradle)), add the Jitpack Maven repository:
+In your project-level Gradle file (you can find an example in the demo, [build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/android/build.gradle)), add the Jitpack Maven repository:
 
 ```groovy
 allprojects {
@@ -73,7 +73,7 @@ CLIENT_ID=client_id
 APP_REDIRECT_SCHEME=app_redirect_scheme
 ```
 
-#### Add the following values to your App Level build.gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Ionic-Native-Example/blob/master/android/app/build.gradle))
+#### Add the following values to your App Level build.gradle file(In the demo, [app/build.gradle](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/android/app/build.gradle))
 
 Now we must read the configuration to create the string resources that will be used by the FriendlyScore Connect Android library. Also we will include the FriendlyScore Connect Library.
 
@@ -103,9 +103,10 @@ You can select the environment you want to use:
 | Environments.DEVELOPMENT | Use this your environment to test your integration with live but limited Production API Calls |
 | Environments.PRODUCTION  | Production API environment |
 
-###  Android Implementation
+###  Implementation
 
-The [FriendlyScoreConnectPlugin.java](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/android/app/src/main/java/com/demo/friendlyscore/connect/FriendlyScoreConnectPlugin.java) provides function that can be called from the Ionic components.
+Inside the `MainActivity` class (In the demo [MainActivity.kt](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/android/app/src/main/kotlin/com/demo/friendlyscore/connect/MainActivity.kt)) we must add the necessary functions to interact with the Flutter UI and trigger the FriendlyScore Connect Flow.
+
 
 You must pass `userReference` that identifies the user to the Plugin.
 
@@ -123,7 +124,7 @@ You must pass `userReference` that identifies the user to the Plugin.
     val REQUEST_CODE_FRIENDLY_SCORE = 11
 
 ```
-Inside the `MainActivity` class create a `CHANNEL` for communication between the flutter ui components & native code
+Create a `CHANNEL` for communication between the flutter ui components & native code
 
 ```kotlin
 private val CHANNEL = "friendlyscore/connect"
