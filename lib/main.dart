@@ -58,8 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   void _startFriendlyScore() async  {
-
-    setState(() async {
       try{
         await platform.invokeMethod('startFriendlyScoreConnect', {'user-reference':'your_user_reference'});
       }catch(e){
@@ -69,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //serverError
         print(e);
       }
-    });
+
   }
 
   @override

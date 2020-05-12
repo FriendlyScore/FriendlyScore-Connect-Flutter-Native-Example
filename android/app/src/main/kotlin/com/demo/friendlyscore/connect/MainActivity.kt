@@ -5,6 +5,7 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import com.friendlyscore.base.Environments
+import com.friendlyscore.ui.obp.FriendlyScoreView
 import com.friendlyscore.ui.obp.FriendlyScoreView.Companion.startFriendlyScoreView
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -33,7 +34,7 @@ class MainActivity: FlutterActivity() {
     fun startFriendlyScoreConnect(call:MethodCall,result: MethodChannel.Result){
         Handler(Looper.getMainLooper()).post {
             // Call the desired channel message here.
-            FriendlyScoreView.Companion.startFriendlyScoreView(MainActivity.this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION)
+            FriendlyScoreView.startFriendlyScoreView(this, getString(R.string.fs_client_id), userReference, REQUEST_CODE_FRIENDLY_SCORE, Environments.PRODUCTION)
         }
     }
     /**
