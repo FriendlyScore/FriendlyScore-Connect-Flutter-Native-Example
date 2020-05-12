@@ -9,9 +9,9 @@ To get started quickly with FriendlyScore Connect for Flutter, clone the [GitHub
 ## Requirements
 - [FriendlyScore API keys](https://friendlyscore.com/company/keys)
 ### Flutter
--1.19.0
+- 1.19.0
 ### Dart
--2.9.0
+- 2.9.0
 ### Android
 - Install or update Android Studio version 3.2 or greater
 - Android 5.0 and greater
