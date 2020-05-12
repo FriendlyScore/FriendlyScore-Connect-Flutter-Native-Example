@@ -214,7 +214,7 @@ Handle the result from FriendlyScore Connect SDK, to pass back to the Flutter UI
 ### Add a Button
 
 This includes the ui elements such as button that a user will click to trigger the FriendlyScore Connect Flow.
-In your main.dart file (in the demo [app.component.html](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/lib/main.dart)) add a button that triggers the FriendlyScore Connect flow.
+In your main.dart file (in the demo [main.dart](https://github.com/FriendlyScore/FriendlyScore-Connect-Flutter-Native-Example/blob/master/lib/main.dart)) add a button that triggers the FriendlyScore Connect flow.
 Create a `MethodChannel` to communicate with the native component. This must match the `Channel` created earlier in the `MainActivity`
 
 ```dart
