@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Device (3.2.1)
+  - FriendlyScoreConnect (1.0.7):
+    - FriendlyScoreCore (~> 1.0.8)
+    - Kingfisher
+  - FriendlyScoreCore (1.0.8):
+    - Alamofire (~> 4.9.1)
+    - Device (~> 3.2.1)
+    - Hero (~> 1.5.0)
+    - IQKeyboardManager (~> 6.5.4)
+    - JGProgressHUD (~> 2.1)
+    - Moya (~> 13.0.1)
+    - ObjectMapper (~> 3.5.2)
+    - PhoneNumberKit (~> 3.2.0)
+    - Result (~> 4.1.0)
+    - SnapKit (~> 5.0.1)
+  - Hero (1.5.0)
+  - IQKeyboardManager (6.5.5)
+  - JGProgressHUD (2.1)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - ObjectMapper (3.5.2)
+  - PhoneNumberKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.2.0)
+    - PhoneNumberKit/UIKit (= 3.2.0)
+  - PhoneNumberKit/PhoneNumberKitCore (3.2.0)
+  - PhoneNumberKit/UIKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - Result (4.1.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - FriendlyScoreConnect
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Device
+    - FriendlyScoreConnect
+    - FriendlyScoreCore
+    - Hero
+    - IQKeyboardManager
+    - JGProgressHUD
+    - Kingfisher
+    - Moya
+    - ObjectMapper
+    - PhoneNumberKit
+    - Result
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Device: 0738862dd8a30856b4bd9e21cb9b728873d21392
+  FriendlyScoreConnect: d86a97247320c3bc3a5ba906f336e31764822352
+  FriendlyScoreCore: f6a741c7e398226d88f416a6435e60f84663fa22
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  PhoneNumberKit: df411d46177d1492da84e10b6c093846dd861452
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 04075e8887856a12f5e9a8d57e99ba0604f6ff1e
+
+COCOAPODS: 1.8.4
