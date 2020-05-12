@@ -88,7 +88,8 @@ class MainActivity: FlutterActivity() {
                 }
                 //Present if the user closed the flow
                 if (data.hasExtra("userClosedView")) {
-                    finalResult?.success("userClosedView")
+                   finalResult?.success("userClosedView")
+
                 }
             }
         }

@@ -58,15 +58,22 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   void _startFriendlyScore() async  {
-      try{
-        await platform.invokeMethod('startFriendlyScoreConnect', {'user-reference':'your_user_reference'});
-      }catch(e){
+      //try{
+        await platform.invokeMethod('startFriendlyScoreConnect', {'user-reference':'your_user_reference'}).then((value) => {print("")}).catchError((e) {
+          //userReferenceAuthError
+          //serviceDenied
+          //incompleteConfiguration
+          //serverError
+          print(e);
+
+        });
+      /*}catch(e){
         //userReferenceAuthError
         //serviceDenied
         //incompleteConfiguration
         //serverError
         print(e);
-      }
+      }*/
 
   }
 
